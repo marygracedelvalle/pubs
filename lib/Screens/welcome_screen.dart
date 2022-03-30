@@ -14,9 +14,16 @@ class WelcomeScreen extends StatelessWidget {
     final ButtonStyle style = 
     ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
   // final VoidCallback? onPressed;
-      return  Center(      
+      return  Scaffold(   
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(image: AssetImage('assets/images/welcome.png'),
+            fit: BoxFit.cover,            
+          ),
+        )   ,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           ElevatedButton(
             style: style,
@@ -41,7 +48,7 @@ class WelcomeScreen extends StatelessWidget {
           ),
         ],
       ),
-
+        ),
     );
   }
 }
