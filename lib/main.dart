@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Welcome',
       theme: ThemeData(
-       primaryColor: Colors.black,
+       primaryColor: Colors.green,
       ),
       home: const WelcomeScreen(),
     );
